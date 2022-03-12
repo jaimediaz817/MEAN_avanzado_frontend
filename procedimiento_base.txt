@@ -1,0 +1,28 @@
+
+- Generar componente sin tests:
+ng g c auth/login --skipTests -is
+ng g c auth/register --skipTests -is
+ng g c pages/nopagefound --skipTests -is
+ng g c pages/dashboard --skipTests -is
+ng g c shared/breadcrumbs --skipTests -is
+ng g c shared/sidebar --skipTests -is
+ng g c shared/header --skipTests -is
+
+- Generaer módulos:
+ng g m appRouting --flat
+
+- más componentes:
+ng g c pages/progress -is --skipTests
+ng g c pages/grafica1 -is --skipTests
+
+- Login
+ng g c pages/pages --flat --skipTests -is
+ng g c login/ --flat --skipTests -is
+
+
+-------------
+GITHUB
+
+git tag -a v1.0.0 -m "Diseño listo"
+git tag
+
