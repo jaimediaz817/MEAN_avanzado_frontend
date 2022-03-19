@@ -1,1 +1,52 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Striped Progress bar <a class="get-code collapsed" data-toggle="collapse" href="#pgr3" aria-expanded="false"><i class="fa fa-code" title="" data-toggle="tooltip" data-original-title="Get Code"></i></a></h4>
+                <div class="progress m-t-30">
+                    <div
+                        class="progress-bar bg-primary active progress-bar-striped"
+                        style="height:5px;"
+                        [style.width]="getProgreso1"
+                        role="progressbar"
+                    ></div>
+                </div>
+
+                <div class="progress m-t-30">
+                    <div
+                        class="progress-bar bg-secondary active progress-bar-striped"
+                        style="height:5px;"
+                        [style.width]="getProgreso2"
+                        role="progressbar"
+                    ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador
+                    [progreso]="progreso1"
+                    (valorSalida)="progreso1 = $event"
+                    [btnClass]="'btn-primary'"
+                ></app-incrementador>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador
+                    [progreso]="progreso2"
+                    (valorSalida)="progreso2 = $event"
+                    [btnClass]="'btn-info'"
+                ></app-incrementador>
+            </div>
+        </div>
+    </div>
+</div>

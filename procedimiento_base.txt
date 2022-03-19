@@ -8,6 +8,8 @@ ng g c shared/breadcrumbs --skipTests -is
 ng g c shared/sidebar --skipTests -is
 ng g c shared/header --skipTests -is
 
+ng g c components/incrementador --skipTests -is
+
 - Generaer módulos:
 ng g m appRouting --flat
 
@@ -25,4 +27,21 @@ GITHUB
 
 git tag -a v1.0.0 -m "Diseño listo"
 git tag
+git tag -a v1.5.0 -m "Rutas implementadas y separadas, modulos implementados y separados"
+
+- desplegar:
+git push --tags
+
+
+-------------
+MODULOS
+ng g m pages/pages --flat
+ng g m components/components --flat
+
+
+
+-------------
+COMANDOS CHART JS
+npm install --save ng2-charts
+npm install --save chart.js
 

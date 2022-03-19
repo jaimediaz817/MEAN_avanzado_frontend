@@ -1,1 +1,51 @@
-<p>grafica1 works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <!-- <div class="card">
+            <div class="card-body">
+
+                <h3>Sales</h3>
+
+                <div style="display: block">
+                    <canvas baseChart
+                        [data]="doughnutChartData"
+                        [labels]="doughnutChartLabels"
+                        [chartType]="doughnutChartType"
+                        [colors]="colors"
+                    >
+                    </canvas>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-6">
+                <app-dona
+                    title="Ventas"
+                    [labels]="labelsGraph"
+                    [data]="data"
+                ></app-dona>
+            </div>
+            <div class="col-6">
+                <app-dona
+                    title="Ventas"
+                    [labels]="labelsGraph"
+                    [data]="data"
+                ></app-dona>
+            </div>
+            <div class="col-6">
+                <app-dona
+                    title="Ventas"
+                    [labels]="labelsGraph"
+                    [data]="data"
+                ></app-dona>
+            </div>
+            <div class="col-6">
+                <app-dona
+                    title="Ventas"
+                    [labels]="labelsGraph"
+                ></app-dona>
+            </div>
+        </div>
+    </div>
+</div>
+
+
