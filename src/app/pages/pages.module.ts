@@ -14,6 +14,7 @@ import { ComponentsModule } from '../components/components.module';
 
 import { RouterModule } from '@angular/router';
 import { FormsModule} from '@angular/forms';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,14 @@ import { FormsModule} from '@angular/forms';
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
+    AccountSettingsComponent,
   ],
   exports: [
     DashboardComponent,
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     CommonModule,
