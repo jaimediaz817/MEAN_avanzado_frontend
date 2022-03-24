@@ -4,6 +4,7 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { PagesRoutingModule } from './pages/pages.routing';
 import { AuthRoutingModule } from './auth/auth.routing.routing';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 // TODO: routes
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   imports: [
       RouterModule.forRoot(routes),
       PagesRoutingModule,
-      AuthRoutingModule
+      AuthRoutingModule,
+      BrowserModule
 ],
   exports: [RouterModule]
 })
